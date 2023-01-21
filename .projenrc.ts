@@ -16,7 +16,10 @@ const project = new JsiiProject({
   autoApproveUpgrades: true,
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
-    allowedUsernames: ['awlsring', 'github-actions'],
+    allowedUsernames: ['awlsring'],
+  },
+  githubOptions: {
+    projenTokenSecret: 'PROJEN_GITHUB_TOKEN',
   },
 });
 
