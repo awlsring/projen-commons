@@ -87,7 +87,7 @@ const publishOptions: PublishOptions = { ... }
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToGo">publishToGo</a></code> | <code>projen.cdk.JsiiGoTarget</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToNuget">publishToNuget</a></code> | <code>projen.cdk.JsiiDotNetTarget</code> | *No description.* |
-| <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToPyPi">publishToPyPi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | *No description.* |
+| <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToPypi">publishToPypi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | *No description.* |
 
 ---
@@ -122,10 +122,10 @@ public readonly publishToNuget: JsiiDotNetTarget;
 
 ---
 
-##### `publishToPyPi`<sup>Optional</sup> <a name="publishToPyPi" id="@awlsring/projen-commons.PublishOptions.property.publishToPyPi"></a>
+##### `publishToPypi`<sup>Optional</sup> <a name="publishToPypi" id="@awlsring/projen-commons.PublishOptions.property.publishToPypi"></a>
 
 ```typescript
-public readonly publishToPyPi: JsiiPythonTarget;
+public readonly publishToPypi: JsiiPythonTarget;
 ```
 
 - *Type:* projen.cdk.JsiiPythonTarget

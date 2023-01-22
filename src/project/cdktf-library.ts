@@ -6,7 +6,7 @@ import { AwlsringCommonProps } from './common-properties';
 export interface PublishOptions {
   readonly npmAccess?: NpmAccess;
   readonly releaseToNpm?: boolean;
-  readonly publishToPyPi?: JsiiPythonTarget;
+  readonly publishToPypi?: JsiiPythonTarget;
   readonly publishToGo?: JsiiGoTarget;
   readonly publishToNuget?: JsiiDotNetTarget;
 }

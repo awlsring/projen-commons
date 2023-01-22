@@ -56,8 +56,8 @@ describe('Test CDKTF library', () => {
     const publishOptions = AwlsringCdktfLibrary['publishOptions'](options);
     expect(publishOptions.npmAccess).toEqual(NpmAccess.PUBLIC);
     expect(publishOptions.releaseToNpm).toEqual(true);
-    expect(publishOptions.publishToPyPi?.distName).toEqual(options.name);
-    expect(publishOptions.publishToPyPi?.module).toEqual(options.name.replace('-', '_'));
+    expect(publishOptions.publishToPypi?.distName).toEqual(options.name);
+    expect(publishOptions.publishToPypi?.module).toEqual(options.name.replace('-', '_'));
     expect(publishOptions.publishToGo?.moduleName).toEqual('github.com/awlsring/test-library');
     expect(publishOptions.publishToGo?.gitUserName).toEqual('awlsring');
     expect(publishOptions.publishToGo?.gitUserEmail).toEqual(options.authorAddress);
