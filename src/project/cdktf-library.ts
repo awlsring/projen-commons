@@ -39,14 +39,6 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
         releaseToNpm: true,
       };
 
-      const goOptions = {
-        publishToGo: {
-          moduleName: `github.com/awlsring/${options.name}`,
-          gitUserName: 'awlsring',
-          gitUserEmail: AwlsringCommonProps.authorAddress,
-        },
-      };
-
       let splitSpace = options.name.split('-');
       for (let i = 0; i < splitSpace.length; i++) {
         splitSpace[i] = splitSpace[i][0].toUpperCase() + splitSpace[i].substr(1);
@@ -62,7 +54,6 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
       publishOptions = {
         ...pyPiOptions,
         ...npmOptions,
-        ...goOptions,
         ...nugetOptions,
       };
     }

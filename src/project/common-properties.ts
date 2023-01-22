@@ -5,7 +5,7 @@ export const AwlsringCommonProps = {
   defaultReleaseBranch: 'main',
   autoApproveUpgrades: true,
   autoApproveOptions: {
-    allowedUsernames: ['awlsring', 'github-actions'],
+    allowedUsernames: ['awlsring'],
     secret: 'GITHUB_TOKEN',
   },
   githubOptions: {

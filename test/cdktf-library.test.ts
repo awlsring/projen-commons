@@ -58,9 +58,6 @@ describe('Test CDKTF library', () => {
     expect(publishOptions.releaseToNpm).toEqual(true);
     expect(publishOptions.publishToPypi?.distName).toEqual(options.name);
     expect(publishOptions.publishToPypi?.module).toEqual(options.name.replace('-', '_'));
-    expect(publishOptions.publishToGo?.moduleName).toEqual('github.com/awlsring/test-library');
-    expect(publishOptions.publishToGo?.gitUserName).toEqual('awlsring');
-    expect(publishOptions.publishToGo?.gitUserEmail).toEqual(options.authorAddress);
     expect(publishOptions.publishToNuget?.dotNetNamespace).toEqual('Awlsring.TestLibrary');
     expect(publishOptions.publishToNuget?.packageId).toEqual('Awlsring.TestLibrary');
   });
