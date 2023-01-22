@@ -74,11 +74,16 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
 
   constructor(options: AwlsringCdktfLibraryOptions) {
     const packageName = `@awlsring/${options.name}`;
+    const devDeps = ['@awlsring/projen-commons'];
+    if (options.devDeps) {
+      devDeps.push(...options.devDeps);
+    }
     super({
       packageName: packageName,
       ...AwlsringCdktfLibrary.publishOptions(options),
       ...AwlsringCommonProps,
       ...options,
+      devDeps: devDeps,
     });
   }
 }

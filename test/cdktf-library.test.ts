@@ -37,6 +37,25 @@ describe('Test CDKTF library', () => {
     const publishOptions = AwlsringCdktfLibrary['publishOptions'](options);
     expect(publishOptions).toEqual({});
   });
+  test('Test publish with devDeps appends', () => {
+    const options = {
+      author: 'awlsring',
+      cdktfVersion: '0.6.0',
+      publish: false,
+      authorAddress: 'mattcanemail@gmail.com',
+      defaultReleaseBranch: 'main',
+      projenrcTs: true,
+      name: 'projen-commons',
+      repositoryUrl: 'https://github.com/awlsring/projen-commons.git',
+      packageName: '@awlsring/projen-commons',
+      deps: ['projen'],
+      peerDeps: ['projen'],
+      devDeps: ['test'],
+    };
+    // eslint-disable-next-line dot-notation
+    AwlsringCdktfLibrary['publishOptions'](options);
+    new AwlsringCdktfLibrary(options);
+  });
   test('Test publish produces options', () => {
     const options = {
       author: 'awlsring',
@@ -50,7 +69,6 @@ describe('Test CDKTF library', () => {
     };
     // eslint-disable-next-line dot-notation
     const publishOptions = AwlsringCdktfLibrary['publishOptions'](options);
-    console.log(publishOptions);
     expect(publishOptions.npmAccess).toEqual(NpmAccess.PUBLIC);
     expect(publishOptions.releaseToNpm).toEqual(true);
     expect(publishOptions.publishToPyPi?.distName).toEqual(options.name);
