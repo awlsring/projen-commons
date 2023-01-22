@@ -1,4 +1,4 @@
-import { JsiiDotNetTarget, JsiiGoTarget, JsiiJavaTarget, JsiiPythonTarget } from 'projen/lib/cdk';
+import { JsiiDotNetTarget, JsiiGoTarget, JsiiPythonTarget } from 'projen/lib/cdk';
 import { ConstructLibraryCdktf, ConstructLibraryCdktfOptions } from 'projen/lib/cdktf';
 import { NpmAccess } from 'projen/lib/javascript';
 import { AwlsringCommonProps } from './common-properties';
@@ -7,7 +7,6 @@ export interface PublishOptions {
   readonly npmAccess?: NpmAccess;
   readonly releaseToNpm?: boolean;
   readonly publishToPyPi?: JsiiPythonTarget;
-  readonly publishToMaven?: JsiiJavaTarget;
   readonly publishToGo?: JsiiGoTarget;
   readonly publishToNuget?: JsiiDotNetTarget;
 }
@@ -30,15 +29,6 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
       const npmOptions = {
         npmAccess: NpmAccess.PUBLIC,
         releaseToNpm: true,
-      };
-
-      const mavenOptions = {
-        publishToMaven: {
-          javaPackage: `com.github.awlsring.${options.name.replace('-', '.')}`,
-          mavenGroupId: 'com.github.awlsring',
-          mavenArtifactId: options.name,
-          mavenEndpoint: 'https://s01.oss.sonatype.org',
-        },
       };
 
       const goOptions = {
@@ -64,7 +54,6 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
       publishOptions = {
         ...pyPiOptions,
         ...npmOptions,
-        ...mavenOptions,
         ...goOptions,
         ...nugetOptions,
       };

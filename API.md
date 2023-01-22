@@ -2323,7 +2323,6 @@ const publishOptions: PublishOptions = { ... }
 | --- | --- | --- |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.npmAccess">npmAccess</a></code> | <code>projen.javascript.NpmAccess</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToGo">publishToGo</a></code> | <code>projen.cdk.JsiiGoTarget</code> | *No description.* |
-| <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToMaven">publishToMaven</a></code> | <code>projen.cdk.JsiiJavaTarget</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToNuget">publishToNuget</a></code> | <code>projen.cdk.JsiiDotNetTarget</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.publishToPyPi">publishToPyPi</a></code> | <code>projen.cdk.JsiiPythonTarget</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.PublishOptions.property.releaseToNpm">releaseToNpm</a></code> | <code>boolean</code> | *No description.* |
@@ -2347,16 +2346,6 @@ public readonly publishToGo: JsiiGoTarget;
 ```
 
 - *Type:* projen.cdk.JsiiGoTarget
-
----
-
-##### `publishToMaven`<sup>Optional</sup> <a name="publishToMaven" id="@awlsring/projen-commons.PublishOptions.property.publishToMaven"></a>
-
-```typescript
-public readonly publishToMaven: JsiiJavaTarget;
-```
-
-- *Type:* projen.cdk.JsiiJavaTarget
 
 ---
 

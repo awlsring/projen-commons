@@ -73,10 +73,6 @@ describe('Test CDKTF library', () => {
     expect(publishOptions.releaseToNpm).toEqual(true);
     expect(publishOptions.publishToPyPi?.distName).toEqual(options.name);
     expect(publishOptions.publishToPyPi?.module).toEqual(options.name.replace('-', '_'));
-    expect(publishOptions.publishToMaven?.javaPackage).toEqual('com.github.awlsring.' + options.name.replace('-', '.'));
-    expect(publishOptions.publishToMaven?.mavenGroupId).toEqual('com.github.awlsring');
-    expect(publishOptions.publishToMaven?.mavenArtifactId).toEqual(options.name);
-    expect(publishOptions.publishToMaven?.mavenEndpoint).toEqual('https://s01.oss.sonatype.org');
     expect(publishOptions.publishToGo?.moduleName).toEqual('github.com/awlsring/test-library');
     expect(publishOptions.publishToGo?.gitUserName).toEqual('awlsring');
     expect(publishOptions.publishToGo?.gitUserEmail).toEqual(options.authorAddress);
