@@ -28,7 +28,7 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
     let publishOptions: PublishOptions = {};
     if (options.publish) {
       const pyPiOptions = {
-        publishToPyPi: {
+        publishToPypi: {
           distName: options.name,
           module: options.name.replace('-', '_'),
         },
