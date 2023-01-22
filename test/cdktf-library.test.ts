@@ -4,15 +4,10 @@ import { AwlsringCdktfLibrary } from '../src';
 describe('Test CDKTF library', () => {
   test('Creation gives no errors', () => {
     const options = {
-      author: 'awlsring',
       cdktfVersion: '0.6.0',
       publish: false,
-      authorAddress: 'mattcanemail@gmail.com',
-      defaultReleaseBranch: 'main',
-      projenrcTs: true,
       name: 'projen-commons',
       repositoryUrl: 'https://github.com/awlsring/projen-commons.git',
-      packageName: '@awlsring/projen-commons',
       deps: ['projen'],
       peerDeps: ['projen'],
     };
@@ -21,15 +16,10 @@ describe('Test CDKTF library', () => {
   });
   test('Test publish produces no options', () => {
     const options = {
-      author: 'awlsring',
       cdktfVersion: '0.6.0',
       publish: false,
-      authorAddress: 'mattcanemail@gmail.com',
-      defaultReleaseBranch: 'main',
-      projenrcTs: true,
       name: 'projen-commons',
       repositoryUrl: 'https://github.com/awlsring/projen-commons.git',
-      packageName: '@awlsring/projen-commons',
       deps: ['projen'],
       peerDeps: ['projen'],
     };
@@ -39,15 +29,10 @@ describe('Test CDKTF library', () => {
   });
   test('Test publish with devDeps appends', () => {
     const options = {
-      author: 'awlsring',
       cdktfVersion: '0.6.0',
       publish: false,
-      authorAddress: 'mattcanemail@gmail.com',
-      defaultReleaseBranch: 'main',
-      projenrcTs: true,
       name: 'projen-commons',
       repositoryUrl: 'https://github.com/awlsring/projen-commons.git',
-      packageName: '@awlsring/projen-commons',
       deps: ['projen'],
       peerDeps: ['projen'],
       devDeps: ['test'],

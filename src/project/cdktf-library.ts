@@ -11,7 +11,15 @@ export interface PublishOptions {
   readonly publishToNuget?: JsiiDotNetTarget;
 }
 
-export interface AwlsringCdktfLibraryOptions extends ConstructLibraryCdktfOptions {
+// Doing this to set all base params as optional then extending the interface
+// Needs to do indirect to trick projen into thinking it's a new interface
+interface BaseCDKTFOptions extends Partial<ConstructLibraryCdktfOptions> {
+  readonly name: string;
+  readonly cdktfVersion: string;
+  readonly repositoryUrl: string;
+}
+
+export interface AwlsringCdktfLibraryOptions extends BaseCDKTFOptions {
   readonly publish: boolean;
 }
 
