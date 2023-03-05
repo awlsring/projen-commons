@@ -5,13 +5,13 @@ import { CheckForUpgradesScriptFile } from './check-for-upgrade';
 import { ProviderUpgrade } from './provider-upgrade';
 import { AwlsringCdktfLibrary, AwlsringCdktfLibraryOptions } from '../cdktf-library';
 
-interface CdktfProvider {
+export interface CdktfProvider {
   readonly owner: string;
   readonly name: string;
   readonly version: string;
 }
 
-interface CdktfProviderLibraryOptions extends AwlsringCdktfLibraryOptions {
+export interface CdktfProviderLibraryOptions extends AwlsringCdktfLibraryOptions {
   readonly provider: CdktfProvider;
 }
 

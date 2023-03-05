@@ -1,8 +1,8 @@
 import { JobPermission } from 'projen/lib/github/workflows-model';
 import { NodeProject } from 'projen/lib/javascript';
 
-interface ProviderUpgradeOptions {
-  scriptPath: string;
+export interface ProviderUpgradeOptions {
+  readonly scriptPath: string;
 }
 
 /**

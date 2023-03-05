@@ -2,8 +2,8 @@ import { FileBase, FileBaseOptions, IResolver } from 'projen';
 import { NodeProject } from 'projen/lib/javascript';
 
 export interface CheckForUpgradesScriptFileOptions extends FileBaseOptions {
-  fqproviderName: string;
-  providerVersion: string;
+  readonly fqproviderName: string;
+  readonly providerVersion: string;
 }
 
 export class CheckForUpgradesScriptFile extends FileBase {
