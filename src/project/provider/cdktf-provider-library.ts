@@ -69,11 +69,11 @@ export class AwlsringCdktfProviderLibrary extends AwlsringCdktfLibrary {
         language: 'typescript',
         app: 'echo noop',
         sendCrashReports: false,
-        terraformProviders: [`${props.provider.owner}/${props.provider.name}@~> ${props.provider.version}`],
+        terraformProviders: [`${props.provider.owner}/${props.provider.name}@${props.provider.version}`],
       },
     });
     this.addTask('fetch', {
-      exec: `mkdir -p src/base && rm -rf ./src/base/* && cdktf get && cp -R .gen/providers/${props.provider.name}/* ./src/base/ && cp .gen/versions.json ./src/base/version.json`,
+      exec: `mkdir -p src/base && rm -rf ./src/base/* && cdktf get && cp -R .gen/providers/${props.provider.name}/* ./src/base/ && cp .gen/versions.json ./src/version.json`,
       env: {
         CHECKPOINT_DISABLE: '1',
       },
