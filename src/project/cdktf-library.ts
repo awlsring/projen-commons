@@ -1,7 +1,7 @@
 import { JsiiDotNetTarget, JsiiGoTarget, JsiiPythonTarget } from 'projen/lib/cdk';
 import { ConstructLibraryCdktf, ConstructLibraryCdktfOptions } from 'projen/lib/cdktf';
 import { NpmAccess } from 'projen/lib/javascript';
-import { AwlsringCommonProps } from './common-properties';
+import { AwlsringCommonProps } from './common';
 
 export interface PublishOptions {
   readonly npmAccess?: NpmAccess;
@@ -62,7 +62,7 @@ export class AwlsringCdktfLibrary extends ConstructLibraryCdktf {
 
   constructor(options: AwlsringCdktfLibraryOptions) {
     const packageName = `@awlsring/${options.name}`;
-    const devDeps = ['@awlsring/projen-commons'];
+    const devDeps = ['@awlsring/projen-commons', '@actions/core@^1.1.0', 'dot-prop@^5.2.0'];
     if (options.devDeps) {
       devDeps.push(...options.devDeps);
     }

@@ -37,7 +37,6 @@ export class ProviderUpgrade {
             uses: 'actions/checkout@v2',
           },
           { run: 'yarn install' },
-          { run: 'yarn add @actions/core' },
           {
             id: 'check_version',
             run: 'yarn check-if-new-provider-version',
