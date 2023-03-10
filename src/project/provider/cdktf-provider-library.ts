@@ -99,7 +99,7 @@ export class AwlsringCdktfProviderLibrary extends AwlsringCdktfLibrary {
       'yarn fetch && yarn compile && yarn docgen',
     );
     this.setScript('test', 'jest --passWithNoTests');
-
+    this.eslint?.ignorePatterns.push('src/base/*');
     if (this.npmignore) {
       this.npmignore.exclude(this.cdktfJson);
       this.npmignore.exclude('.gen');
@@ -109,6 +109,6 @@ export class AwlsringCdktfProviderLibrary extends AwlsringCdktfLibrary {
     this.gitignore.exclude('.gen');
     this.gitignore.exclude('.terraform');
     this.gitignore.exclude('package-lock.json');
-    this.gitignore.exclude(this.cdktfJson);
+    this.gitignore.include(this.cdktfJson);
   }
 }
