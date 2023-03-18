@@ -22,5 +22,5 @@ const project = new JsiiProject({
     projenTokenSecret: 'PROJEN_GITHUB_TOKEN',
   },
 });
-
+project.gitignore.exclude('package-lock.json');
 project.synth();

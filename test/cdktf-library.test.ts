@@ -1,5 +1,6 @@
 import { NpmAccess } from 'projen/lib/javascript';
 import { AwlsringCdktfLibrary } from '../src';
+import { configurePublish } from '../src/project/common';
 
 describe('Test CDKTF library', () => {
   test('Creation gives no errors', () => {
@@ -24,7 +25,7 @@ describe('Test CDKTF library', () => {
       peerDeps: ['projen'],
     };
     // eslint-disable-next-line dot-notation
-    const publishOptions = AwlsringCdktfLibrary['publishOptions'](options);
+    const publishOptions = configurePublish(options);
     expect(publishOptions).toEqual({});
   });
   test('Test publish with devDeps appends', () => {
@@ -38,7 +39,7 @@ describe('Test CDKTF library', () => {
       devDeps: ['test'],
     };
     // eslint-disable-next-line dot-notation
-    AwlsringCdktfLibrary['publishOptions'](options);
+    configurePublish(options);
     new AwlsringCdktfLibrary(options);
   });
   test('Test publish produces options', () => {
@@ -53,7 +54,7 @@ describe('Test CDKTF library', () => {
       repositoryUrl: 'https://github.com/awlsring/test-library.git',
     };
     // eslint-disable-next-line dot-notation
-    const publishOptions = AwlsringCdktfLibrary['publishOptions'](options);
+    const publishOptions = configurePublish(options);
     expect(publishOptions.npmAccess).toEqual(NpmAccess.PUBLIC);
     expect(publishOptions.releaseToNpm).toEqual(true);
     expect(publishOptions.publishToPypi?.distName).toEqual(options.name);
