@@ -7,12 +7,12 @@ interface BaseCdk8sOptions extends Partial<ConstructLibraryCdk8sOptions> {
   readonly repositoryUrl: string;
 }
 
-export interface AwlsringAwsCdkLibraryOptions extends BaseCdk8sOptions {
+export interface AwlsringCdk8sLibraryOptions extends BaseCdk8sOptions {
   readonly publish: boolean;
 }
 
 export class AwlsringCdk8sLibrary extends ConstructLibraryCdk8s {
-  constructor(options: AwlsringAwsCdkLibraryOptions) {
+  constructor(options: AwlsringCdk8sLibraryOptions) {
     const packageName = `@awlsring/${options.name}`;
     const devDeps = ['@awlsring/projen-commons', '@actions/core@^1.1.0', 'dot-prop@^5.2.0'];
     if (options.devDeps) {
