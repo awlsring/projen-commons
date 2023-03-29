@@ -524,6 +524,7 @@ new AwlsringAwsCdkLibrary(options: AwlsringAwsCdkLibraryOptions)
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.addFields">addFields</a></code> | Directly set fields in `package.json`. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
@@ -939,6 +940,22 @@ be installed in the next `npx projen` run and the version will be recorded
 in your `package.json` file. You can upgrade manually or using `yarn
 add/upgrade`. If you wish to specify a version range use this syntax:
 `module@^7`.
+
+---
+
+##### `addScripts` <a name="addScripts" id="@awlsring/projen-commons.AwlsringAwsCdkLibrary.addScripts"></a>
+
+```typescript
+public addScripts(scripts: {[ key: string ]: string}): void
+```
+
+Replaces the contents of multiple npm package.json scripts.
+
+###### `scripts`<sup>Required</sup> <a name="scripts" id="@awlsring/projen-commons.AwlsringAwsCdkLibrary.addScripts.parameter.scripts"></a>
+
+- *Type:* {[ key: string ]: string}
+
+The scripts to set.
 
 ---
 
@@ -1948,6 +1965,7 @@ new AwlsringCdk8sLibrary(options: AwlsringCdk8sLibraryOptions)
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.addFields">addFields</a></code> | Directly set fields in `package.json`. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
@@ -2361,6 +2379,22 @@ be installed in the next `npx projen` run and the version will be recorded
 in your `package.json` file. You can upgrade manually or using `yarn
 add/upgrade`. If you wish to specify a version range use this syntax:
 `module@^7`.
+
+---
+
+##### `addScripts` <a name="addScripts" id="@awlsring/projen-commons.AwlsringCdk8sLibrary.addScripts"></a>
+
+```typescript
+public addScripts(scripts: {[ key: string ]: string}): void
+```
+
+Replaces the contents of multiple npm package.json scripts.
+
+###### `scripts`<sup>Required</sup> <a name="scripts" id="@awlsring/projen-commons.AwlsringCdk8sLibrary.addScripts.parameter.scripts"></a>
+
+- *Type:* {[ key: string ]: string}
+
+The scripts to set.
 
 ---
 
@@ -3325,6 +3359,7 @@ new AwlsringCdktfLibrary(options: AwlsringCdktfLibraryOptions)
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.addFields">addFields</a></code> | Directly set fields in `package.json`. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
@@ -3738,6 +3773,22 @@ be installed in the next `npx projen` run and the version will be recorded
 in your `package.json` file. You can upgrade manually or using `yarn
 add/upgrade`. If you wish to specify a version range use this syntax:
 `module@^7`.
+
+---
+
+##### `addScripts` <a name="addScripts" id="@awlsring/projen-commons.AwlsringCdktfLibrary.addScripts"></a>
+
+```typescript
+public addScripts(scripts: {[ key: string ]: string}): void
+```
+
+Replaces the contents of multiple npm package.json scripts.
+
+###### `scripts`<sup>Required</sup> <a name="scripts" id="@awlsring/projen-commons.AwlsringCdktfLibrary.addScripts.parameter.scripts"></a>
+
+- *Type:* {[ key: string ]: string}
+
+The scripts to set.
 
 ---
 
@@ -4676,6 +4727,7 @@ new AwlsringCdktfProviderLibrary(props: CdktfProviderLibraryOptions)
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addFields">addFields</a></code> | Directly set fields in `package.json`. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addKeywords">addKeywords</a></code> | Adds keywords to package.json (deduplicated). |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addPeerDeps">addPeerDeps</a></code> | Defines peer dependencies. |
+| <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addScripts">addScripts</a></code> | Replaces the contents of multiple npm package.json scripts. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addTestCommand">addTestCommand</a></code> | DEPRECATED. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.hasScript">hasScript</a></code> | Indicates if a script by the name name is defined. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.removeScript">removeScript</a></code> | Removes the npm script (always successful). |
@@ -5089,6 +5141,22 @@ be installed in the next `npx projen` run and the version will be recorded
 in your `package.json` file. You can upgrade manually or using `yarn
 add/upgrade`. If you wish to specify a version range use this syntax:
 `module@^7`.
+
+---
+
+##### `addScripts` <a name="addScripts" id="@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addScripts"></a>
+
+```typescript
+public addScripts(scripts: {[ key: string ]: string}): void
+```
+
+Replaces the contents of multiple npm package.json scripts.
+
+###### `scripts`<sup>Required</sup> <a name="scripts" id="@awlsring/projen-commons.AwlsringCdktfProviderLibrary.addScripts.parameter.scripts"></a>
+
+- *Type:* {[ key: string ]: string}
+
+The scripts to set.
 
 ---
 
