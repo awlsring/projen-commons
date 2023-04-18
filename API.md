@@ -1,3 +1,8 @@
+# projen-commons
+
+This is a commons repository for my projen projects.
+
+
 # API Reference <a name="API Reference" id="api-reference"></a>
 
 
@@ -973,7 +978,7 @@ DEPRECATED.
 
 ---
 
-##### `hasScript` <a name="hasScript" id="@awlsring/projen-commons.AwlsringAwsCdkLibrary.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="@awlsring/projen-commons.AwlsringAwsCdkLibrary.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -2412,7 +2417,7 @@ DEPRECATED.
 
 ---
 
-##### `hasScript` <a name="hasScript" id="@awlsring/projen-commons.AwlsringCdk8sLibrary.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="@awlsring/projen-commons.AwlsringCdk8sLibrary.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -3806,7 +3811,7 @@ DEPRECATED.
 
 ---
 
-##### `hasScript` <a name="hasScript" id="@awlsring/projen-commons.AwlsringCdktfLibrary.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="@awlsring/projen-commons.AwlsringCdktfLibrary.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
@@ -5174,7 +5179,7 @@ DEPRECATED.
 
 ---
 
-##### `hasScript` <a name="hasScript" id="@awlsring/projen-commons.AwlsringCdktfProviderLibrary.hasScript"></a>
+##### ~~`hasScript`~~ <a name="hasScript" id="@awlsring/projen-commons.AwlsringCdktfProviderLibrary.hasScript"></a>
 
 ```typescript
 public hasScript(name: string): boolean
