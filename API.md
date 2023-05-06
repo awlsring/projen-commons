@@ -1107,6 +1107,7 @@ names of cdk modules (e.g. `@aws-cdk/aws-lambda`).
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
@@ -1358,6 +1359,18 @@ public readonly root: Project;
 - *Type:* projen.Project
 
 The root project.
+
+---
+
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="@awlsring/projen-commons.AwlsringAwsCdkLibrary.property.subprojects"></a>
+
+```typescript
+public readonly subprojects: Project[];
+```
+
+- *Type:* projen.Project[]
+
+Returns all the subprojects within this project.
 
 ---
 
@@ -2525,6 +2538,7 @@ The command to execute.
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdk8sLibrary.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
@@ -2775,6 +2789,18 @@ public readonly root: Project;
 - *Type:* projen.Project
 
 The root project.
+
+---
+
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="@awlsring/projen-commons.AwlsringCdk8sLibrary.property.subprojects"></a>
+
+```typescript
+public readonly subprojects: Project[];
+```
+
+- *Type:* projen.Project[]
+
+Returns all the subprojects within this project.
 
 ---
 
@@ -3932,6 +3958,7 @@ The command to execute.
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfLibrary.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
@@ -4180,6 +4207,18 @@ public readonly root: Project;
 - *Type:* projen.Project
 
 The root project.
+
+---
+
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="@awlsring/projen-commons.AwlsringCdktfLibrary.property.subprojects"></a>
+
+```typescript
+public readonly subprojects: Project[];
+```
+
+- *Type:* projen.Project[]
+
+Returns all the subprojects within this project.
 
 ---
 
@@ -5313,6 +5352,7 @@ The command to execute.
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.projectBuild">projectBuild</a></code> | <code>projen.ProjectBuild</code> | Manages the build process of the project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.projenCommand">projenCommand</a></code> | <code>string</code> | The command to use in order to run the projen CLI. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.root">root</a></code> | <code>projen.Project</code> | The root project. |
+| <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.subprojects">subprojects</a></code> | <code>projen.Project[]</code> | Returns all the subprojects within this project. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.tasks">tasks</a></code> | <code>projen.Tasks</code> | Project tasks. |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.testTask">testTask</a></code> | <code>projen.Task</code> | *No description.* |
 | <code><a href="#@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.defaultTask">defaultTask</a></code> | <code>projen.Task</code> | This is the "default" task, the one that executes "projen". |
@@ -5562,6 +5602,18 @@ public readonly root: Project;
 - *Type:* projen.Project
 
 The root project.
+
+---
+
+##### `subprojects`<sup>Required</sup> <a name="subprojects" id="@awlsring/projen-commons.AwlsringCdktfProviderLibrary.property.subprojects"></a>
+
+```typescript
+public readonly subprojects: Project[];
+```
+
+- *Type:* projen.Project[]
+
+Returns all the subprojects within this project.
 
 ---
 
