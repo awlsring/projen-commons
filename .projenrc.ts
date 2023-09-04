@@ -1,5 +1,5 @@
 import { JsiiProject } from 'projen/lib/cdk';
-import { NpmAccess } from 'projen/lib/javascript';
+import { NpmAccess, UpgradeDependenciesSchedule } from 'projen/lib/javascript';
 
 const project = new JsiiProject({
   author: 'awlsring',
@@ -9,8 +9,8 @@ const project = new JsiiProject({
   name: 'projen-commons',
   repositoryUrl: 'https://github.com/awlsring/projen-commons.git',
   packageName: '@awlsring/projen-commons',
-  deps: ['projen'],
-  peerDeps: ['projen'],
+  devDeps: ['projen'],
+  peerDeps: ['projen@^0.72'],
   npmAccess: NpmAccess.PUBLIC,
   releaseToNpm: true,
   autoApproveUpgrades: true,
@@ -20,6 +20,11 @@ const project = new JsiiProject({
   },
   githubOptions: {
     projenTokenSecret: 'PROJEN_GITHUB_TOKEN',
+  },
+  depsUpgradeOptions: {
+    workflowOptions: {
+      schedule: UpgradeDependenciesSchedule.WEEKLY,
+    },
   },
 });
 project.gitignore.exclude('package-lock.json');
